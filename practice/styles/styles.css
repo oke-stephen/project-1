@@ -1,0 +1,134 @@
+body{
+    background: linear-gradient(40deg, rgb(209, 167, 167), rgb(87, 77, 77));
+    color: yellowgreen;
+
+    text-align: center;
+    color: rgb(255, 232, 232);
+    margin: 0 4px;
+    font-family: cursive;
+    font-size: 1rem;
+    margin-bottom: 10%;
+}
+h1 {
+    color: rgb(43, 15, 15);
+}
+.form {
+    background-color: rgb(23, 15, 15);
+    height: 40vh;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 30px;
+}
+.form:hover{
+    background-color: rgb(95, 2, 2);
+    transition: 1s;
+}
+input{
+    background-color: brown;
+    width: 50%;
+    border-radius: 7px;
+    margin:0 34px ;
+    font-size: 2.5rem;
+}
+input:focus{
+    color: rgb(243, 240, 241);
+}
+button{
+    width: 3rem;
+    padding: 4px;
+    margin-left: 12px;
+    align-items: flex-start;
+}
+form{
+    margin-top: 80px;
+    display: flex;
+    font-size: 1.9rem;
+    width: 100%;
+}
+.label {
+    display: block;
+}
+
+
+
+@media(min-width: 781px){
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0%;
+        background-color: black;
+        margin-bottom: 10%;
+    }
+    
+    .form{
+        height: 100%;
+        font-size: 0.3rem;
+        font-weight: 100px;
+        box-sizing: border-box;
+        width: 50%;
+        margin: 3% auto;
+    }
+
+    form{
+        margin-top: 0px;
+        font-size: 0.5rem;
+        width: 60%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    input{
+        background-color: rgb(156, 151, 151);
+        width: 50%;
+        border-radius: 7px;
+        margin:0 34px ;
+        font-size: 0.2rem;
+        display: block;
+        height: 10%;
+    }
+
+}
+@media(max-width:780px){
+    body{
+        width: auto;
+        font-size: 100%;
+    }
+    form{
+        font-size: 2rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        font-size:80%;
+        height: 40%;
+    }
+}
+@media(max-width:600px){
+   body{
+    width: auto;
+    padding: 3%;
+   }
+    .form{
+        width: 88%;
+        height: 10%;
+    }
+    input{
+        width: 80%;
+        display: block;
+        font-size: 3%;
+    }
+    .second-form, form{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+    }
+}

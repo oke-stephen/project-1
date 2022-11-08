@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/practice/app.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="">first</a>
+        </li>
+        <li>
+          <a href="">second</a>
+        </li>
+        <li>
+          <a href="">third</a>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <h1>
+        Hi everyone, my name is stephen, i'm a young web devoloper(15 years old)
+      </h1>
+      <p>
+        Lets explore some of my demo projects with <b>html</b>, <b>css</b> and
+        <b>java script</b>
+      </p>
+      <h3>
+        The first is a form with maximum characters of 60 and then reduces as
+        you input values into the input space
+      </h3>
+      <div class="form">
+        <form action="/store-inputs" method="post">
+          <label for="user-name" class="usernamelabel">user-name</label>
+          <input
+            type="text"
+            name="username"
+            class="user-name"
+            maxlength="60"
+          /><span class="max-characters">0</span>/60
+        </form>
+      </div>
+    </section>
+    <section>
+        the second is node.js driven website where u fil a form, i'll receive the inputs and then u'll receive a dynamic response
+        <div class="form">
+          <form action="/store-user-inputs" method="POST" class="second-form">
+            <label for="user-name" class="secondusernamelabel" style="display: block;">user-name</label>
+            <input
+              type="text"
+              name="username"
+              class="user-name"
+              maxlength="60"
+            /><span class="max-characters">0</span>/60
+            <button type="submit" >submit</button>
+          </form>
+    </section>
+  </body>
+</html>
